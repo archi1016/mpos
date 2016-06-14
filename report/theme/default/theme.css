@@ -1,0 +1,564 @@
+body	{
+	margin : 0;
+	background-color : #FFFFFF;
+	color : #000000;
+	font-family : 微軟正黑體, Verdana;
+}
+
+div.footer {
+	padding : 16px 8px 8px 8px;
+	text-align : right;
+	line-height : 140%;
+	background-color : #E8E8E8;
+	border-style : solid;
+	border-color : #888888;
+	border-width : 1px 0 0 0;
+}
+
+a {
+	text-decoration : none;
+}
+
+form {
+	margin : 0;
+	padding : 0;
+}
+
+input,select,button,textarea {
+	font-family : 微軟正黑體, Verdana;
+	font-size : 16pt;
+}
+
+table {
+	white-space : nowrap;
+}
+
+table td {
+	padding : 0;
+}
+
+div.error {
+	margin : 64px auto;
+	width : 720px;
+	padding : 96px 0;
+	text-align : center;
+	font-size : 20pt;
+	font-weight : bold;
+	color : #AA0000;
+	background-color : #FFE0E0;
+	border-style : solid;
+	border-color : #AA0000;
+	border-width : 1px;	
+	border-radius: 8px;
+}
+
+div.header {
+	padding : 8px;
+	background-color : #DCE6F1;
+	border-style : solid;
+	border-color : #95B3D7;
+	border-width : 0 0 1px 0;
+}
+
+div img {
+	display : block;
+}
+
+div.header h1 {
+	margin : 0;
+	display : inline;
+	position : absolute;
+	left : 48px;
+	top : 12px;
+	font-size : 16pt;
+}
+
+div.logon {
+	margin : 64px auto;
+	padding : 0 0 32px 0;
+	width : 420px;
+	text-align : center;
+	background-color : #F2DCDB;
+	border-style : solid;
+	border-color : #DA9694;
+	border-width : 1px;
+	border-radius: 8px;
+}
+
+div.logon h2 {
+	margin : 0 0 64px 0;
+	font-size : 16pt;
+	padding : 16px 0;
+	color : #FFFFFF;
+	background-color : #C0504D;
+	border-style : solid;
+	border-color : #FFFFFF;
+	border-width : 0 0 1px 0;
+	border-radius: 7px 7px 0 0;
+}
+
+div.tab {
+	padding : 8px;
+	background-color : #E8E8E8;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#F4F4F4), to(#E4E4E4), color-stop(0.8, #E8E8E8));
+	border-style : solid;
+	border-width : 0 0 1px 0;
+}
+
+div.tab ul {
+	margin : 0;
+	padding : 0;
+	position : absolute;
+	left : 48px;
+	top : 0px;
+	list-style-type : none;
+}
+
+div.tab li {
+	float : left;
+	width : 120px;
+	height : 32px;
+	text-align : center;
+	font-size : 14pt;
+}
+
+div.tab li.current {
+	width : 118px;
+	height : 48px;
+	background-color : #FFFFFF;
+	border-style : solid;
+	border-color : #FFFFFF;
+	border-width : 0 1px 1px 1px;
+	border-radius: 0 0 2px 2px;
+}
+
+div.tab a {
+	margin : 0 auto;
+	display : block;
+	width : 118px;
+	height : 32px;
+	padding : 16px 0 0 0;
+	color : #000000;
+}
+
+div.tab a:hover {
+	width : 115px;
+	height : 31px;
+	padding : 9px 0 0 1px;
+	background-color : #FFFFFF;
+	border-style : solid;
+	border-width : 8px 1px 0 1px;
+}
+
+div.tab div {
+	height : 32px;
+	padding : 8px 0 0 0;
+	border-style : solid;
+	border-width : 8px 1px 0 1px;
+}
+
+div#index {
+	border-color : #279E26;
+}
+
+div.tab div.index {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#A1D898), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #279E26;
+}
+
+div.tab a.index:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#A1D898), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #279E26;
+}
+
+div#now {
+	border-color : #DB7D21;
+}
+
+div.tab div.now {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#F4BE87), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #DB7D21;
+}
+
+div.tab a.now:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#F4BE87), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #DB7D21;
+}
+
+div#report {
+	border-color : #7F33D7;
+}
+
+div.tab div.report {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#B8A3E2), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #7F33D7;
+}
+
+div.tab a.report:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#B8A3E2), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #7F33D7;
+}
+
+div#log {
+	border-color : #A39C1C;
+}
+
+div.tab div.log {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#DDDA6E), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #A39C1C;
+}
+
+div.tab a.log:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#DDDA6E), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #A39C1C;
+}
+
+div#tool {
+	border-color : #C90077;
+}
+
+div.tab div.tool {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#E181B5), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #C90077;
+}
+
+div.tab a.tool:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#E181B5), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #C90077;
+}
+
+
+div.tab a.logoff:hover {
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#CCCCCC), to(#FFFFFF), color-stop(0.4, #E8E8E8));
+	border-color : #888888;
+}
+
+
+
+
+div.step {
+	height : 4px;
+	overflow : hidden;
+	background-color : #E8E8E8;
+	border-style : solid;
+	border-color : #888888;
+	border-width : 1px 0;
+}
+
+
+
+div.group {
+	padding : 8px 0 0 0;
+	background-color : #FFFFFF;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#FFFFFF), to(#F0F0F0), color-stop(0.8, #F4F4F4));
+	border-style : solid;
+	border-width : 0 0 1px 0;
+}
+
+table.group th {
+	padding : 4px 8px;
+	color : #666666;
+	border-style : solid;
+	border-color : #000000 #CCCCCC #000000 #FFFFFF;
+	border-width : 0 1px;
+}
+
+table.group td {
+	padding : 0 8px;
+	height : 80px;
+	border-style : solid;
+	border-color : #000000 #CCCCCC #000000 #FFFFFF;
+	border-width : 0 1px;
+}
+
+table.group th.last {
+	border-style : solid;
+	border-color : #FFFFFF;
+	border-width : 0 0 0 1px;
+}
+
+table.group td.last {
+	border-style : solid;
+	border-color : #FFFFFF;
+	border-width : 0 0 0 1px;
+}
+
+table.group optgroup {
+	color : #888888;
+}
+
+table.group option {
+	color : #000000;
+}
+
+
+
+div.content td.nav {
+	width : 180px;
+	border-style : solid;
+	border-color : #888888;
+	border-width : 0 1px 0 0;
+}
+
+div.content td.split {
+	width : 4px;
+	background-color : #E8E8E8;
+	border-style : solid;
+	border-color : #888888;
+	border-width : 0 1px 0 0;
+}
+
+td.nav dl {
+	margin : 0;
+	padding : 0;
+}
+
+td.nav dt {
+	width : 172px;
+	height : 22px;
+	padding : 5px 0 3px 8px;
+	color : #666666;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#FFFFFF), to(#E8E8E8), color-stop(0.6, #F0F0F0));
+	border-style : solid;
+	border-width : 1px 0;	
+	border-color : #CCCCCC;
+}
+
+td.nav dd {
+	margin : 0;
+}
+
+td.nav a.current {
+	width : 148px;
+	height : 22px;
+	padding : 6px 0 4px 32px;
+	background-color : #FFD86C;
+}
+
+td.nav a {
+	display : block;
+	width : 148px;
+	height : 22px;
+	padding : 6px 0 4px 32px;
+	color : #000000;
+}
+
+td.nav a:hover {
+	width : 147px;
+	height : 22px;
+	padding : 6px 0 2px 33px;
+	background-color : #FEE486;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#FEF1BD), to(#FEF9C4), color-stop(0.6, #FEE486));
+	border-style : solid;
+	border-width : 1px 0;	
+	border-color : #F2CA58;
+}
+
+td.content h1 {
+	margin : 0;
+	padding : 4px 0 0 8px;
+	height : 28px;
+	font-size : 14pt;
+	color : #117733;
+}
+
+td.content h2 {
+	margin : 0;
+	padding : 4px 0 0 8px;
+	height : 28px;
+	font-size : 14pt;
+	color : #AA0000;
+}
+
+td.content h3 {
+	margin : 0;
+	padding : 4px 0 0 24px;
+	height : 28px;
+	font-size : 14pt;
+	color : #117722;
+}
+
+
+table.report {
+	margin : 0 0 32px 0;
+	font-size : 14pt;
+}
+
+table.report th {
+	height : 27px;
+	padding : 4px 16px 0 8px;
+	text-align : left;
+	color : #FFFFFF;
+	background-color : #4F81BD;
+	border-style : solid;
+	border-color : #95B3D7;
+	border-width : 0 1px 1px 0;
+}
+
+table.report td {
+	height : 27px;
+	padding : 4px 16px 0 8px;
+	border-style : solid;
+	border-color : #95B3D7;
+	border-width : 0 1px 1px 0;
+}
+
+table.report th.c0 {
+	background-color : #DB7D21;
+}
+
+table.report tr.r0 {
+	background-color : #FFFFFF;
+}
+
+table.report tr.r1 {
+	background-color : #DCE6F1;
+}
+
+table.report tr.r0sed {
+	background-color : #FEE486;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#FEF1BD), to(#FEF9C4), color-stop(0.6, #FEE486));
+}
+
+table.report tr.r1sed {
+	background-color : #FEE486;
+	background-image : -webkit-gradient(linear,0% 0%, 0% 100%, from(#FEF1BD), to(#FEF9C4), color-stop(0.6, #FEE486));
+}
+
+textarea.report {
+	margin : 0 0 16px 8px;
+	display : block;
+	width : 680px;
+	height : 480px;
+	font-size : 20pt;
+}
+
+
+
+
+
+table.list {
+	margin : 0 0 32px 0;
+	font-size : 14pt;
+}
+
+table.list th {
+	height : 27px;
+	padding : 4px 16px 0 8px;
+	text-align : left;
+	color : #FFFFFF;
+	background-color : #8064A2;
+	border-style : solid;
+	border-color : #B1A0C7;
+	border-width : 0 1px 1px 0;
+}
+
+table.list td {
+	height : 27px;
+	padding : 4px 16px 0 8px;
+	border-style : solid;
+	border-color : #B1A0C7;
+	border-width : 0 1px 1px 0;
+}
+
+table.list th.cl {
+	background-color : #DB7D21;
+}
+
+table.list tr.r0 {
+	background-color : #FFFFFF;
+}
+
+table.list tr.r1 {
+	background-color : #E4DFEC;
+}
+
+
+
+
+table.query {
+	margin : 0 0 32px 0;
+	font-size : 14pt;
+}
+
+table.query th {
+	height : 27px;
+	padding : 4px 16px 0 8px;
+	text-align : left;
+	color : #FFFFFF;
+	background-color : #C0504D;
+	border-style : solid;
+	border-color : #DA9694;
+	border-width : 0 1px 1px 0;
+}
+
+table.query td {
+	padding : 8px;
+	background-color : #F2DCDB;
+	border-style : solid;
+	border-color : #DA9694;
+	border-width : 0 1px 1px 0;
+}
+
+table.query th.cl {
+	background-color : #DB7D21;
+}
+
+table.query select.year {
+	width : 120px;
+}
+
+table.query select.month {
+	width : 80px;
+}
+
+table.query select.item {
+	width : 400px;
+}
+
+table.query optgroup {
+	color : #3366CC;
+}
+
+table.query option {
+	color : #000000;
+}
+
+
+div.guestbook {
+	width : 760px;
+}
+
+div.guestbook h4 {
+	margin : 0;
+	padding : 4px 16px 0 8px;
+	height : 27px;
+	font-size : 14pt;
+	background-color : #DCE6F1;
+	border-style : solid;
+	border-color : #95B3D7;
+	border-width : 0 1px 1px 0;
+}
+
+div.guestbook p {
+	margin : 0;
+	padding : 0 32px;
+	font-size : 16pt;
+	line-height : 32px;
+	letter-spacing : 1px;
+	background-color : #FFFFFF;
+	border-style : solid;
+	border-color : #95B3D7;
+	border-width : 0 1px 0 0;
+}
+
+div.guestbook div.time {
+	padding : 4px 16px 0 16px;
+	height : 27px;
+	text-align : right;
+	color : #666666;
+	background-color : #FFFFFF;
+	border-style : dashed solid solid solid;
+	border-color : #95B3D7;
+	border-width : 1px 1px 0 0;
+}

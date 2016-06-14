@@ -1,0 +1,37 @@
+<?php
+
+require('func.php');
+
+CHECK_ACCESS_KEY();
+
+$a[0] = WEB_API_QUERY_BASE;
+$a[1] = $ACCESS_KEY;
+$a[2] = $SECTION_ID;	
+UDP_SEND_AND_RECV($a, $ret);
+
+PAGE_INIT('');
+
+HEADER_TAB_INIT($gpi);
+HEADER_TAB_CLOSE($gpi);
+if (SIDE_NAV_INIT('')) {
+	$TSV_FILE = RETURN_ABOUT_OBJECT_TSV_FILE($SECTION_ID);
+	switch ($SECTION_ID) {
+		case ABOUT_ORDER_NOTICE:
+			LIST_TEXT_DATA($SECTION_TITLE, $TSV_FILE);
+			break;
+
+		case ABOUT_CLASS_MEMO:
+			LIST_TEXT_DATA($SECTION_TITLE, $TSV_FILE);
+			break;
+
+		default:
+			LIST_REPORT_DATA($SECTION_TITLE, $TSV_FILE, '', '');
+			break;
+	}
+	SIDE_NAV_CLOSE();
+}
+
+PAGE_FOOTER();
+PAGE_OUTPUT();
+
+?>
